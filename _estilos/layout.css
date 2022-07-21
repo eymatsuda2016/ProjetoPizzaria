@@ -1,0 +1,78 @@
+/*
+Cores
+
+Verde Escuro: #065902
+Verde Claro: #078C31
+Amarelo: #F2B705
+Vermelho Claro: #F03733
+Vermelho Escuro: #D90404
+
+Cinza Escuro: #404040
+Cinza: #F7F7F7
+*/
+
+*{
+   margin: 0; padding: 0; box-sizing: border-box;
+}
+
+nav{
+    width: 95%;
+    height: 200px;
+    background-color: #404040;
+    margin: 10px auto;
+}
+nav div#logo{
+    float: left;
+    background-image: url(../_imagens/secao08-logo-pizzaria-fontenelle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+nav ul#esquerda{
+    float: left;
+}
+nav ul#direita{
+    float: right;
+}
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    margin-top: 70px;
+    height: 40px;
+}
+nav ul li{
+    list-style: none;  
+}
+
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 100px;
+
+    font-size: 80%;
+}
+nav ul li a#criar-conta{
+    border: 1px solid #fff;
+    padding: 9px 29px;
+}
+nav ul li a:hover{
+    background-color: #F2B705;
+    transition: 0.8s;
+}
+
+nav ion-icon#icone-user{
+    width: 45px;  
+    height: 45px;
+    color: white;
+    margin-top: -13px;
+    margin-left: 20px;
+}
+nav ion-icon#icone-user:hover{
+    color: #F2B705;
+    transition: 0.8s;
+    cursor: pointer;
+}
