@@ -1,6 +1,5 @@
 /*
 Cores
-
 Verde Escuro: #065902
 Verde Claro: #078C31
 Amarelo: #F2B705
@@ -15,12 +14,23 @@ Cinza: #F7F7F7
    margin: 0; padding: 0; box-sizing: border-box;
 }
 
+header{
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0)), url(../_imagens/secao08-background-capa.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    border-top: 5px solid #078C31;
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+}
+
 nav{
     width: 95%;
     height: 200px;
-    background-color: #404040;
     margin: 10px auto;
 }
+
 nav div#logo{
     float: left;
     background-image: url(../_imagens/secao08-logo-pizzaria-fontenelle.png);
@@ -29,12 +39,15 @@ nav div#logo{
     width: 200px;
     height: 200px;
 }
+
 nav ul#esquerda{
     float: left;
 }
+
 nav ul#direita{
     float: right;
 }
+
 nav ul{
     display: flex;
     flex-flow: row wrap;
@@ -42,23 +55,24 @@ nav ul{
     margin-top: 70px;
     height: 40px;
 }
+
 nav ul li{
     list-style: none;  
 }
-
 
 nav ul li a{
     color: white;
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 100px;
-
     font-size: 80%;
 }
+
 nav ul li a#criar-conta{
     border: 1px solid #fff;
     padding: 9px 29px;
 }
+
 nav ul li a:hover{
     background-color: #F2B705;
     transition: 0.8s;
@@ -71,8 +85,39 @@ nav ion-icon#icone-user{
     margin-top: -13px;
     margin-left: 20px;
 }
+
 nav ion-icon#icone-user:hover{
     color: #F2B705;
     transition: 0.8s;
     cursor: pointer;
 }
+
+header div#chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--------------------------------*/
+/*     SEÇAO DOMINGO PERFEITO     */
+/*--------------------------------*/
+section#domingo-perfeito{
+    width: 100%;
+    padding: 40px 0 80px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+div#domingo-perfeito-esquerda, div#domingo-perfeito-direita{
+    position: relative;
+    width: 15%;
+    background-color: yellow;
+}
+ div#domingo-perfeito-centro{
+    width: 65%;
+ }
